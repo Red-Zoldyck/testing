@@ -1,0 +1,109 @@
+#homepage-body {
+    padding: 0;
+    margin: 0;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#jeep-history {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.jeep-history-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.jeep-history-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0056b3; /* Jeep's blue shade */
+}
+
+.jeep-history-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.jeep-history-timeline {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 4px solid #0056b3;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.timeline-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.timeline-img {
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.timeline-img.left {
+    order: -1; /* Position image to the left */
+}
+
+.timeline-img.right {
+    order: 1; /* Position image to the right */
+}
+
+.timeline-content:hover .timeline-img {
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .jeep-history-header h1 {
+        font-size: 2rem;
+    }
+
+    .timeline-section {
+        padding: 15px;
+    }
+
+    .timeline-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

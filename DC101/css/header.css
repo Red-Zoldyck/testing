@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Jeep-head {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    width: 97%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.JeepImg {
+    height: 40px;
+    margin-right: 20px;
+}
+@media (max-width: 768px) {
+    .Jeep-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #homepagepic {
+        height: 400px;
+    }
+
+    .ads1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+
+ul li a:hover {
+    color: #FFD700; 
+}
+
+.icons-container {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+   
+}
+.icons-container a:hover {
+    opacity: 0.7;
+}
+.icons {
+    height: 20px;
+    margin-left: 15px;
+}
+
+.vehicle-models {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.vehicle {
+    text-align: center;
+}
+
+.vehicle img {
+    max-width: 300px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#vehicles-section {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 10px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#vehicles-section h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    color: black;
+}
+#vehicles-section h2 {
+    font-size: 30px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    color: black;
+}
+
+#close-vehicles {
+    position: absolute;
+    top: 60px;
+    right: 25px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#close-vehicles:hover {
+    background-color: #FFD700;
+    color: black;
+}

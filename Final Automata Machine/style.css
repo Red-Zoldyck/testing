@@ -1,0 +1,31 @@
+*{
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#inputString{
+   width: 16rem;
+}
+
+#tree-container{
+    text-align: left;
+    min-width: 20px; 
+    min-height: 10vh; 
+    overflow: auto;
+}
+
+.node circle {
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.node text {
+    font: 15px arial;
+    font-weight: bold;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
